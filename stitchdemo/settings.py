@@ -20,15 +20,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-xb+xvm%74(h^inu4f9_1)9j9oe^d0u=s2azrute1o6@cd_7sqr"
-TELEGRAM_BOT_TOKEN = "7342007702:AAEBV6rUghIDciTD32DFHtqBtAxsMi38jIQ"
-GCS_BUCKET_NAME= "/Users/snubeaver/block/stitch-demo-441405-273b177dd78e.json"
-
-
+SECRET_KEY = os.getenv("SECRET_KEY")
+# Google Cloud Storage
+GCS_CREDENTIALS = os.getenv('GCS_BUCKET_NAME')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 
 # Application definition
