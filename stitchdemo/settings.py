@@ -21,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-xb+xvm%74(h^inu4f9_1)9j9oe^d0u=s2azrute1o6@cd_7sqr"
-TELEGRAM_API = "7342007702:AAEBV6rUghIDciTD32DFHtqBtAxsMi38jIQ"
+TELEGRAM_BOT_TOKEN = "7342007702:AAEBV6rUghIDciTD32DFHtqBtAxsMi38jIQ"
+GCS_BUCKET_NAME= "/Users/snubeaver/block/stitch-demo-441405-273b177dd78e.json"
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
