@@ -26,7 +26,7 @@ GCS_CREDENTIALS = os.getenv('GCS_BUCKET_NAME')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['35.232.58.216', 'localhost', '127.0.0.1']
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
